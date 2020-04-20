@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { IonContent, IonHeader, IonPage,
-  IonCard, IonTitle, IonToolbar, IonCardHeader,IonCardContent } from '@ionic/react';
+  IonCard, IonTitle, IonToolbar, IonCardHeader,IonCardContent, IonImg, IonThumbnail,CreateAnimation } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 import AddItem from '../AddItem';
@@ -25,6 +25,7 @@ const Tab1: React.FC = () => {
         </IonHeader>
         <ExploreContainer name="Tab 1 page" />
         {}
+        
         <IonCard>
           <IonCardHeader>
           <h3>Group list of tasks:</h3>
@@ -34,6 +35,7 @@ const Tab1: React.FC = () => {
           </IonCardContent>
           {}
           <ItemList doEdit={setCurrent}/>
+
         </IonCard>
       </IonContent>
     </IonPage>
