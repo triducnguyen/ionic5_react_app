@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { IonContent, IonHeader, IonPage,
   IonCard, IonTitle, IonToolbar, IonCardHeader,IonCardContent, IonImg, IonThumbnail,CreateAnimation } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
 import './Tab1.css';
 import AddItem from '../AddItem';
 import ItemList from '../itemList';
@@ -14,7 +13,7 @@ const Tab1: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>TODO:</IonTitle>
+          <IonTitle>Kitty Adopt</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
@@ -23,7 +22,6 @@ const Tab1: React.FC = () => {
             <IonTitle size="large">Home</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer name="Tab 1 page" />
         {}
         
         <IonCard>
