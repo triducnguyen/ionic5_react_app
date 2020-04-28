@@ -13,7 +13,7 @@ const Tab1: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Kitty Adopt</IonTitle>
+          <IonTitle>Fuzzy Friend Finder</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
@@ -25,14 +25,16 @@ const Tab1: React.FC = () => {
         {}
         
         <IonCard>
-          <IonCardHeader>
-          <h3>Group list of tasks:</h3>
-          </IonCardHeader>
+
           <IonCardContent>
-            <AddItem initialValue={current} clear={()=>setCurrent(null)}/>
+          <IonImg src="https://cdn.discordapp.com/attachments/666476760803573792/704482158944845824/FuzzyFriendFinderV3.png" />
+          
+          </IonCardContent>
+          <IonCardContent>
+          <p>The mission statement of Fuzzy Friend Finder is in direct relation to that of the Idaho Humane Society. Together, we advocate for the welfare and responsible care of animals, protect them from neglect and cruelty, and promote humane education, awareness, and compassion. We believe that because domestic animals are a product of human intervention, we have a special obligation to them in regard to humane treatment and responsible stewardship.</p>
           </IonCardContent>
           {}
-          <ItemList doEdit={setCurrent}/>
+
 
         </IonCard>
       </IonContent>

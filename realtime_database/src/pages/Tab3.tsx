@@ -1,13 +1,14 @@
 import React from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import './Tab3.css';
+import SimpleMap from '../map';
 
 const Tab3: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Tab 3</IonTitle>
+          <IonTitle>Map</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>
@@ -16,6 +17,8 @@ const Tab3: React.FC = () => {
             <IonTitle size="large">Tab 3</IonTitle>
           </IonToolbar>
         </IonHeader>
+        <SimpleMap></SimpleMap>
+      
       </IonContent>
     </IonPage>
   );
