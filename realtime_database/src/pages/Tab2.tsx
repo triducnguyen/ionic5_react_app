@@ -38,7 +38,7 @@ const Tab2: React.FC = () => {
               <IonButton onClick={() => setShowModal(false)}>Close</IonButton>
 
               </IonModal>
-              <IonButton onClick={() => setShowModal(true)}>Paslode</IonButton>
+              <IonButton onClick={() => setShowModal(true)}>Photos</IonButton>
             </IonCardContent>
         </IonCard>
         <IonCard>
@@ -60,7 +60,7 @@ const Tab2: React.FC = () => {
               <IonImg src="https://media.discordapp.net/attachments/666476760803573792/704464512765394991/20200427_164358.jpg?width=349&height=466"></IonImg>
               <IonButton onClick={() => setShowModal1(false)}>Close</IonButton>
               </IonModal>
-              <IonButton onClick={() => setShowModal1(true)}>Caterpillar</IonButton>
+              <IonButton onClick={() => setShowModal1(true)}>Photos</IonButton>
             </IonCardContent>
         </IonCard>
         <IonCard>
@@ -81,7 +81,7 @@ const Tab2: React.FC = () => {
               <IonImg src="https://media.discordapp.net/attachments/666476760803573792/704464745855582238/20200427_164109.jpg"></IonImg>
               <IonButton onClick={() => setShowModal2(false)}>Close</IonButton>
               </IonModal>
-              <IonButton onClick={() => setShowModal2(true)}>Bobcat</IonButton>
+              <IonButton onClick={() => setShowModal2(true)}>Photos</IonButton>
             </IonCardContent>
         </IonCard>
         </IonContent>

@@ -3,7 +3,9 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonInput, IonItem
 
 export const Tab4: React.FC = () => {
 
-  const [text, setText] = useState<string>();
+  const [text1, setText1] = useState<string>();
+  const [text2, setText2] = useState<string>();
+  const [text3, setText3] = useState<string>();
   const [number, setNumber] = useState<number>();
 
   return (
@@ -17,28 +19,28 @@ export const Tab4: React.FC = () => {
         <IonList>
           <IonItemDivider>First Name</IonItemDivider>
           <IonItem>
-            <IonInput value={text} placeholder="Enter Input" onIonChange={e => setText(e.detail.value!)}></IonInput>
+            <IonInput value={text1} onIonChange={e => setText1(e.detail.value!)}></IonInput>
           </IonItem>
 
           <IonItemDivider>Last Name</IonItemDivider>
           <IonItem>
-            <IonInput value={text} placeholder="Enter Input" onIonChange={e => setText(e.detail.value!)} clearInput></IonInput>
+            <IonInput value={text2} onIonChange={e => setText2(e.detail.value!)} clearInput></IonInput>
           </IonItem>
 
           <IonItemDivider>Address</IonItemDivider>
           <IonItem>
-            <IonInput value={text} placeholder="Enter Input" onIonChange={e => setText(e.detail.value!)} clearInput></IonInput>
+            <IonInput value={text3} onIonChange={e => setText3(e.detail.value!)} clearInput></IonInput>
           </IonItem>
 
           <IonItemDivider>Phone Number</IonItemDivider>
           <IonItem>
-            <IonInput type="number" value={number} placeholder="Enter Number" onIonChange={e => setNumber(parseInt(e.detail.value!, 10))}></IonInput>
+            <IonInput type="number" value={number} onIonChange={e => setNumber(parseInt(e.detail.value!, 10))}></IonInput>
           </IonItem>
 
 
         </IonList>
 
-        <IonButton>Submit Application</IonButton>
+        <IonButton>Thanks for your application</IonButton>
       </IonContent>
     </IonPage>
   );
